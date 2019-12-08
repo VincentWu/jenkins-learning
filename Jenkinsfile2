@@ -1,0 +1,12 @@
+pipeline {
+   agent any
+
+   stages {
+      stage('Build') {
+         steps {
+            mvn clean package sprint-boot:repackage
+						set
+         }
+      }
+   }
+}
